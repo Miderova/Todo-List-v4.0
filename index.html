@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" <link rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" <link rel="stylesheet" />
     <script src="script.js" defer type="module"></script>
     <title>Todo List</title>
 </head>
@@ -13,16 +13,33 @@
     <div class="container">
         <div class="todo-app">
             <h1>To-Do App</h1>
+
+            <div class="stat-container">
+                <div class="detalis">
+                    <h3>Keep it Up!</h3>
+                    <div id="progressbar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="stats-number">
+                    <p id="numbers">0 / 0</p>
+                </div>
+
+            </div>
+
+
             <form class="input-area">
                 <input type="text" id="task-input" placeholder="Add a new task...">
-                <button type="submit" id="add-task-btn"> <img src="./img/flat_plus.png" alt="btn" class="btn-img"></button>
+                <button type="button" id="add-task-btn"> <img src="./img/flat_plus.png" alt="btn"
+                        class="btn-img"></button>
             </form>
             <div class="todos-container">
                 <ul id="task-list"></ul>
-                <img  class="empty-image" src="./img/no_task.png" alt="empty">
+                <img class="empty-image" src="./img/no_task.png" alt="empty">
             </div>
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 
 </html>
