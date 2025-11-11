@@ -100,3 +100,7 @@ body {
 #task-list {
     width: 100%;
 }
+
+.empty-image{
+    height: 30vh;
+}
