@@ -241,3 +241,37 @@ body {
 .task-buttons .solid_delete {
     background: #034b8f;
 }
+
+@media (max-width: 400px) {
+    .stat-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #numbers {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+    .todo-app {
+        padding: 1rem;
+        max-width: 100%;
+    }
+        .input-area {
+        flex-direction: column;
+        align-items: stretch; 
+        gap: 10px;/
+    }
+
+    .input-area button {
+        margin: 0 auto;
+        width: 20%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .input-area input {
+        width: 100%;
+    }
+}
