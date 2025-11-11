@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./img/fon.jpg) no-repeat center center/cover;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+}
+
+.todo-app h1 {
+    font-size: 2rem;
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    background: rgba(103, 164, 255, 0.452);
+    color: #fff;
+
+}
+
+.input-area input::placeholder {
+    color: #bffaff;
+}
+
+.btn-img {
+    height: 20px;
+}
+
+.input-area button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.1rem;
+    background: rgba(103, 164, 255, 0.452);
+    border: 2px solid rgb(99, 222, 253);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.input-area button:hover {
+    transform: scale(1.1);
+    background: #2982e9b0;
+    border: 2px solid rgb(157, 217, 255);
+}
+
+.todos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#task-list {
+    width: 100%;
+}
